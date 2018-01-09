@@ -41,7 +41,7 @@ class PigLatinizer
     arr = text_.split
     res = ""
     i = 0
-    num_words = count(arr)
+    num_words = arr.count
     arr.each do |word|
       i += 1
       res = res + piglatinize(word)
