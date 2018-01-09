@@ -10,7 +10,6 @@ class App < Sinatra::Base
     @analyzed_text = PigLatinizer.new
     @user_text = params[:user_input]
     erb :final
-
   end
 
 end
