@@ -7,9 +7,8 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
-    @analyzed = params[:input]
-    pig_lat = PigLatinizer.new(@analyzed)
-    @result = pig_lat.piglatinize
+    @analyzed = params[:input].to_s
+
     erb :final
   end
 
