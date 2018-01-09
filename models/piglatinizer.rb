@@ -17,7 +17,7 @@ class PigLatinizer
       text[i] = text[i+1]
       i += 1
     end
-    text[len - 1] = "ay"
+    text[len - 1] = "way"
     text
   end
 end
