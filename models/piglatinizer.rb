@@ -24,8 +24,9 @@ class PigLatinizer
     end
     i = 0
     len = text.length
-    while i < len - cons
+    while i < len - cons - 1
       text[i] = text[i + cons]
+      i += 1
     end
     text
 
