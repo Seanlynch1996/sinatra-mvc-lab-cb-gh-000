@@ -18,8 +18,9 @@ class PigLatinizer
       end
       i += 1
     end
+    str = ""
     if cons != 0
-      text = text[0..cons - 1]
+      str = text[0..cons - 1]
     end
     text
 
