@@ -22,7 +22,7 @@ class PigLatinizer
     if cons != 0
       str = text[0..cons - 1]
     end
-    text
+    str 
 
   end
 end
