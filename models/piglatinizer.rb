@@ -7,8 +7,16 @@ class PigLatinizer
   end
 
   def piglatinize(text_)
-    text = text_
-    cons = text[/[aeiouAEIOU/]]
-    cons
+    i = 0
+    text.each do |el|
+      if (el == "a" || el == "e" || el == "i" || el == "o" || el == "u" || el == "A" || el == "E" ||
+        el == "I" || el == "O" || el == "O")
+        cons = i
+        break
+      end
+      i += 1
+    end
+    cons 
+
   end
 end
