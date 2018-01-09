@@ -18,7 +18,8 @@ class PigLatinizer
       end
       i += 1
     end
-    cons
+    text = text[0..cons]
+    text
 
   end
 end
