@@ -8,6 +8,7 @@ class PigLatinizer
 
   def piglatinize(text_)
     i = 0
+    text = text_
     text.each do |el|
       if (el == "a" || el == "e" || el == "i" || el == "o" || el == "u" || el == "A" || el == "E" ||
         el == "I" || el == "O" || el == "O")
@@ -16,7 +17,7 @@ class PigLatinizer
       end
       i += 1
     end
-    cons 
+    cons
 
   end
 end
