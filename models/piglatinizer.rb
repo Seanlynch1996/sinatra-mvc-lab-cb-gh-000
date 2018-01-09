@@ -29,7 +29,11 @@ class PigLatinizer
       res[i] = text[i + cons]
       i += 1
     end
-    res = res + str
+    if cons += 0
+      res = res + str + "ay"
+    else
+      res = res + "way"
+    end
     res
 
   end
