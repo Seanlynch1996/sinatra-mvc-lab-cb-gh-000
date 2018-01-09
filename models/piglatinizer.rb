@@ -39,7 +39,11 @@ class PigLatinizer
 
   def to_pig_latin(text_)
     arr = text_.split
-    arr
+    res = ""
+    arr.each do |word|
+      res = res + word.piglatinize
+    end
+    res
   end
 
 end
