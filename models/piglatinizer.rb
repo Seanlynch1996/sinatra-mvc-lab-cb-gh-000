@@ -43,6 +43,7 @@ class PigLatinizer
     i = 0
     num_words = count(arr)
     arr.each do |word|
+      i += 1
       res = res + piglatinize(word)
       if i != num_words
         res = res + " "
