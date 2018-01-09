@@ -17,7 +17,7 @@ class PigLatinizer
       text[i] = text[i+1]
       i += 1
     end
-    if text_[0] =~ /[aeiou]/
+    if text[len - 1] =~ /[aeiou]/
       text[len - 1] = "way"
     else
       text[len - 1] = "ay"
