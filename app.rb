@@ -7,8 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
-    p_latin = PigLatinizer.new(params[:user_input])
-    @analyzed = p_latin.to_pig_latin
+    @analyzed = PigLatinizer.new(params[:user_input])
     erb :final
 
   end
