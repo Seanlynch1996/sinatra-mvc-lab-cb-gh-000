@@ -1,15 +1,15 @@
 
 class PigLatinizer
 
-  attr_accessor :text
+  #attr_accessor :text
   def initialize(text = "")
     @text = text
   end
 
-  def piglatinize
+  def piglatinize(text_ = "")
     i = 0
     cons = 0
-    text1 = text
+    text1 = text_
     text1.each_char do |el|
       if (el == "a" || el == "e" || el == "i" || el == "o" || el == "u" || el == "A" || el == "E" ||
         el == "I" || el == "O" || el == "O")
