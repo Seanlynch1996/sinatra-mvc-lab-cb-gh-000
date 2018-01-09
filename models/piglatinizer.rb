@@ -41,7 +41,7 @@ class PigLatinizer
     arr = text_.split
     res = ""
     arr.each do |word|
-      res = res + word.piglatinize
+      res = res + piglatinize(word)
     end
     res
   end
