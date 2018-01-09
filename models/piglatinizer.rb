@@ -7,10 +7,18 @@ class PigLatinizer
   end
 
   def piglatinize(text_)
-    #text = @text
     text = text_
-    text[text.length] = text[0]
+    cons = 0
+    if text.length == 1 || text[0] =~ /aeiouAEIOU/
+      cons = 0
+    elsif text[1] =~ /aeiouAEIOU/
+      cons = 1
+    else
+      cons = 2
+    end
 
+
+    text[text.length] = text[0]
     i = 0
     len = text.length
     while i < len - 1
