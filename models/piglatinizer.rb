@@ -6,7 +6,7 @@ class PigLatinizer
     @text = text
   end
 
-  def piglatinize(text_ = text)
+  def piglatinize(text_ = @text)
     i = 0
     cons = 0
     text1 = text_
